@@ -1,2 +1,2 @@
 #!/bin/bash
-Print("Python is fuun")
+print("Python is fuun")
