@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for a in range(chr(97),chr(123)):
-    print("{:a}" .format(a), end = " ")
+for a in range(ord(a), ord(z) + 1):
+    print("{:a}".format(a), end = "")
