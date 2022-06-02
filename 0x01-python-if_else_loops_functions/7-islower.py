@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def islower(c):
-    for c in range(ord('a'),ord('z')+1):
+    if c>=ord('a') and c<=ord('z')):
         return True
-    for c in range(ord('A'),ord('Z')+1):
+    else: 
         return False
