@@ -2,9 +2,9 @@
 def fizzbuzz(i, n):
     for i in range(1, 101)
         if i % 3 == 0:
-            print("Fizz")
+            i = "Fizz"
         elif i % 5 == 0:
-            print("Buzz")
+            i = "Buzz"
         elif i % 5 == 0 and i % 3 == 0:
-            print("FizzBuzz")
+            i = "FizzBuzz"
         return(i)
