@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    for i in sentence:
-        if sentence[i] = []:
-            first_char = None
-            Length = 0
-        else:
-            first_char = sentence[0]
-            Length = len(sentence)
-            print("Length: {} - First character: {}".format(Length, first_char, end=""))
+    tuple_1 = ()
+    if len(sentence) == 0:
+        tuple_1 = 0, "None"
+    else:
+        tuple_1 = len(sentence), sentence[0]
+    return tuple_1
