@@ -3,8 +3,11 @@
 
 class Square:
     """Represents a square"""
-    def __int__(self, size):
-        """Initiliazes a new square with args:
-        the size of the square of type int"""
+    
+    def __init__(self, size):
+        """Initialize a new Square.
+        Args:
+            size (int): The size of the new square.
+        """
         
         self.__size = size
