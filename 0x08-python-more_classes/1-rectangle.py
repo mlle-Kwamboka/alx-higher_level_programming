@@ -10,8 +10,8 @@ class Rectangle:
         width (int): the width of the new rectangle
         height (int): the height of the new rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -20,7 +20,10 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """sets widtth to a value"""
+        """sets widtth to a value
+        Args: 
+        value (int): the value for width
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif width < o:
@@ -29,7 +32,10 @@ class Rectangle:
 
     @property
     def height(self):
-        """gets the current height of the rectangle"""
+        """gets the current height of the rectangle
+        Args: 
+        value (int): the value of the height
+        """
         return self.__height
 
     @height.setter
