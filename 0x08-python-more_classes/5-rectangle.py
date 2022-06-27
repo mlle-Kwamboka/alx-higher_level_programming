@@ -17,7 +17,7 @@ class Rectangle:
      def __str__(self):
         """Returns an informal and nicely printable string representation
         of a Rectangle instance, filled with the '#' character."""
-        if self.__height == 0 or self.__width == 0:
+         if self.__height == 0 or self.__width == 0:
             return ''
         rec_str = ''
         for i in range(self.__height):
@@ -31,17 +31,17 @@ class Rectangle:
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
         
-    def __del__(self):
+     def __del__(self):
         """Deletes a Rectangle instance."""
         print("Bye rectangle...")
 
-    @property
-    def width(self):
+     @property
+     def width(self):
         """retrieves the width"""
         return self.__width
 
-    @width.setter
-    def width(self, value):
+     @width.setter
+     def width(self, value):
         """sets width to value
         Args:
         Value: Positive integer representing width
@@ -52,10 +52,10 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property
-    def height(self):
+     @property
+     def height(self):
         """retrieves the height"""
-        return self.__height
+         return self.__height
 
     @height.setter
     def height(self, value):
