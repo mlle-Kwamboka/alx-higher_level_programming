@@ -8,6 +8,6 @@ def lookup(obj):
      """Returns list of attributes and methods
    
      Args:
-     obj: The instance/Object
+         obj: The instance/Object
      """
      return dir(obj)
