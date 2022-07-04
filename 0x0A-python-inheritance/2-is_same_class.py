@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Module 2-is_sam_class
+"""Module 2-is_sam_class.
 Finding if object is exactly an instance of the specified class
 """
 
