@@ -1,4 +1,4 @@
-#!/usr/bin/python 3
+#!/usr/bin/python3
 
 """module 0-lookup.
 returns the list of available attributes and 
