@@ -10,4 +10,4 @@ def lookup(obj):
    Args:
       obj: The instance/Object
    """
-    return dir(obj)
+   return dir(obj)
