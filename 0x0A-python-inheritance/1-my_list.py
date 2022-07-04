@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module 1-my_list
+module 1-my_list.
 A class that inherits from list
 """
 
