@@ -27,12 +27,16 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b3.id, 12)
         b4 = Base(4)
         self.assertEqual(b4.id, 4)
+        b5 = Base(-5)
+        self.assertEqual(b5.id, -5)
+        b6 = Base(95)
+        self.assertEqual(b6.id, 96)
 
     def test_1_1(self):
         """tests for type and Instance"""
-        b4 = Base()
-        self.assertEqual(type(b4), Base)
-        self.assertTrue(isinstance(b4, Base))
+        b6 = Base()
+        self.assertEqual(type(b6), Base)
+        self.assertTrue(isinstance(b6, Base))
         
 if __name__ == '__main__':
     unittest.main()
