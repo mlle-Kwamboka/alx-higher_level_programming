@@ -13,7 +13,7 @@ from models.square import Square
 class TestRectangle(unittest.TestCase):
     """Test case for the rectangle class"""
 
-    def set_up(self):
+    def setUp(self):
         Base._Base__nb_objects = 0
 
     def test_2_0(self):
