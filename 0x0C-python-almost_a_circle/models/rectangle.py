@@ -85,5 +85,25 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be greater than 0")
         self.__y = value
+        
+    def display(self):
+        """Displays a Reactangle to stdout"""
+        
+        for y in range(0, self.__y):
+            print()
+        for i in range(0, self.__height):
+            for x in range(0, self.__x):
+                print(" ", end="")
+            for j in range(0, self.__width):
+                print("#", end="")
+            print()
+            
+     def __str__(self):
+        """Returns a string representation of a Rectangle instance."""
 
+        s = "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
+        return s
+
+        
 
