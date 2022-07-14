@@ -33,3 +33,6 @@ class TestBase(unittest.TestCase):
         b4 = Base()
         self.assertEqual(type(b4), Base)
         self.assertTrue(isinstance(b4, Base))
+        
+if __name__ == '__main__':
+    unittest.main()
