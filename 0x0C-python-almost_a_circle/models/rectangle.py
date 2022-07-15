@@ -85,7 +85,6 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be greater than 0")
         self.__y = value
-<<<<<<< HEAD
 
     def area(self):
         """Calculates area of a rectangle object
@@ -93,7 +92,6 @@ class Rectangle(Base):
             area
         """
         return self.__width * self.__height
-=======
         
     def display(self):
         """Displays a Reactangle to stdout"""
@@ -158,7 +156,3 @@ class Rectangle(Base):
         my_dict = {'id': self.id, 'width': self.__width,
                    'height': self.__height, 'x': self.__x, 'y': self.__y}
         return my_dict
-
-        
-
->>>>>>> ad856e6d5e8102153c27c662168c4f3d1fdf8862
