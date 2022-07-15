@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """unittest rectangle
-test cases for the rectangle class numbered accodingly
+test cases for the rectangle class numbered accoding to task number
+eg test_2_2: test 2 of task 2
 """
 
 import unittest
