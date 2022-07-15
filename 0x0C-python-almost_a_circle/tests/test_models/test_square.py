@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""unittest Sqaure
-test cases for Square numbered accordingly
+"""Unittest square.
+Test cases for the Square class.
+Each test has the number of the task,
+and the number of the test for that task
+(i.e 'test_17_0' for the first test of task 17)
 """
 
 import unittest
@@ -10,29 +13,30 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class TestSquare(unittest.TestCase):
-    """Test class for the square class"""
+    """Test class for Square class."""
 
     def setUp(self):
         Base._Base__nb_objects = 0
-        
+
     def test_10_0(self):
         """Test Square class: check for attributes."""
 
         s0 = Square(1)
         self.assertEqual(s0.id, 1)
-        s1 = Square(6, 2, 3)
-        self.assertEqual(s1.height, 6)
-        self.assertEqual(s1.width, 6)
-        self.assertEqual(s1.x, 2)
-        self.assertEqual(s1.y, 3)
+        s1 = Square(5, 3, 4)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.x, 3)
+        self.assertEqual(s1.y, 4)
         self.assertEqual(s1.id, 2)
 
     def test_10_1(self):
         """Test __str__ representation."""
 
-        s1 = Square(9, 4, 5, 5)
-        self.assertEqual(str(s1), "[Square] (5) 4/5 - 9")
+        s1 = Square(9, 4, 5, 6)
+        self.assertEqual(str(s1), "[Square] (6) 4/5 - 9")
 
     def test_10_2(self):
         """Test Square class: check for inheritance."""
@@ -82,10 +86,10 @@ class TestSquare(unittest.TestCase):
         """Test Square class: check for wrong attributes."""
 
         with self.assertRaises(TypeError) as x:
-            s = Square("Fret", 2)
+            s = Square("Hello", 2)
         self.assertEqual("width must be an integer", str(x.exception))
         with self.assertRaises(TypeError) as x:
-            s = Square(2, "not")
+            s = Square(2, "World")
         self.assertEqual("x must be an integer", str(x.exception))
         with self.assertRaises(TypeError) as x:
             s = Square(1, 2, "Foo", 3)
@@ -158,5 +162,3 @@ class TestSquare(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
